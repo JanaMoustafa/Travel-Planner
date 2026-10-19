@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "travel-planner"
+version = "0.1.0"
+description = "Multi-agent TravelPlanner with RAG, Tavily search, and QLoRA Solver"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "chromadb>=0.4.22",
+    "datasets>=2.16.0",
+    "evaluate>=0.4.0",
+    "httpx>=0.26.0",
+    "langchain-community>=0.2.0",
+    "langchain-core>=0.2.0",
+    "langchain-groq>=0.1.0",
+    "langchain-openai>=0.1.8",
+    "pydantic>=2.0",
+    "python-dotenv>=1.0.0",
+    "rouge-score>=0.1.2",
+    "sentence-transformers>=2.5.0",
+    "streamlit>=1.35.0",
+]
+
+[project.optional-dependencies]
+train = [
+    "torch>=2.2.0",
+    "transformers>=4.43.0",
+    "peft>=0.11.0",
+    "trl>=0.9.0",
+    "bitsandbytes>=0.43.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-dir]
+"" = "src"

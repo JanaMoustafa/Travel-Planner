@@ -1,0 +1,211 @@
+{
+  "overall": {
+    "old": {
+      "delivery_rate": 0.9142857142857143,
+      "commonsense_rate": 0.05714285714285714,
+      "hard_constraint_rate": 0.2,
+      "n": 35.0,
+      "avg_rouge1": 0.10668508990112865,
+      "avg_rougeL": 0.045291484806548155,
+      "avg_bleu": 0.0029868951086012645,
+      "avg_semantic_similarity": 0.5170252570084163,
+      "avg_constraint_score": 0.6085714285714289,
+      "avg_structure_score": 0.5714285714285714,
+      "generalization_score": 0.717706392350651,
+      "avg_rouge_l": 0.045291484806548155,
+      "avg_constraint_adherence": 0.6085714285714289
+    },
+    "new": {
+      "delivery_rate": 0.9142857142857143,
+      "commonsense_rate": 0.8571428571428571,
+      "hard_constraint_rate": 0.4,
+      "n": 35.0,
+      "avg_rouge1": 0.08659617878194167,
+      "avg_rougeL": 0.04774317050162329,
+      "avg_bleu": 0.0029573168803647717,
+      "avg_semantic_similarity": 0.3982208413737161,
+      "avg_constraint_score": 0.5257142857142857,
+      "avg_structure_score": 0.7142857142857144,
+      "generalization_score": 0.46894712987400233,
+      "avg_rouge_l": 0.04774317050162329,
+      "avg_constraint_adherence": 0.5257142857142857
+    }
+  },
+  "per_experiment": [
+    {
+      "experiment": "baseline_runs.jsonl",
+      "old": {
+        "delivery_rate": 1.0,
+        "hard_constraint_rate": 0.0,
+        "avg_rouge1": 0.1131472533355179,
+        "avg_rougeL": 0.0486523460066164,
+        "avg_bleu": 0.0028458833637715784,
+        "audit_pass_rate": 0.0,
+        "avg_solver_calls": 1.0,
+        "avg_plan_chars": 2542.6,
+        "contradictory_audit_count": 4
+      },
+      "new": {
+        "delivery_rate": 1.0,
+        "hard_constraint_rate": 0.0,
+        "avg_rouge1": 0.13209127099011486,
+        "avg_rougeL": 0.057649273502162424,
+        "avg_bleu": 0.00689598437119069,
+        "audit_pass_rate": 1.0,
+        "avg_solver_calls": 1.4,
+        "avg_plan_chars": 2366.8,
+        "contradictory_audit_count": 0
+      }
+    },
+    {
+      "experiment": "enhanced_runs.jsonl",
+      "old": {
+        "delivery_rate": 0.4,
+        "hard_constraint_rate": 0.4,
+        "avg_rouge1": 0.05692045644957183,
+        "avg_rougeL": 0.029350171299749307,
+        "avg_bleu": 0.0009632591446161933,
+        "audit_pass_rate": 0.0,
+        "avg_solver_calls": 1.0,
+        "avg_plan_chars": 1493.6,
+        "contradictory_audit_count": 4
+      },
+      "new": {
+        "delivery_rate": 0.4,
+        "hard_constraint_rate": 0.2,
+        "avg_rouge1": 0.18055420260068278,
+        "avg_rougeL": 0.13163074219732152,
+        "avg_bleu": 0.006470871882713723,
+        "audit_pass_rate": 0.0,
+        "avg_solver_calls": 2.0,
+        "avg_plan_chars": 2641.2,
+        "contradictory_audit_count": 0
+      }
+    },
+    {
+      "experiment": "freq_penalty_0.3_runs.jsonl",
+      "old": {
+        "delivery_rate": 1.0,
+        "hard_constraint_rate": 0.0,
+        "avg_rouge1": 0.11791438028978582,
+        "avg_rougeL": 0.04943590451990397,
+        "avg_bleu": 0.003481286368207044,
+        "audit_pass_rate": 0.0,
+        "avg_solver_calls": 1.0,
+        "avg_plan_chars": 2737.6,
+        "contradictory_audit_count": 4
+      },
+      "new": {
+        "delivery_rate": 1.0,
+        "hard_constraint_rate": 1.0,
+        "avg_rouge1": 0.013886348701697457,
+        "avg_rougeL": 0.012614672277779663,
+        "avg_bleu": 0.0,
+        "audit_pass_rate": 1.0,
+        "avg_solver_calls": 1.0,
+        "avg_plan_chars": 259.0,
+        "contradictory_audit_count": 0
+      }
+    },
+    {
+      "experiment": "max_tokens_384_runs.jsonl",
+      "old": {
+        "delivery_rate": 1.0,
+        "hard_constraint_rate": 0.8,
+        "avg_rouge1": 0.08544988366034133,
+        "avg_rougeL": 0.034715390401406455,
+        "avg_bleu": 0.0002426699023654864,
+        "audit_pass_rate": 0.2,
+        "avg_solver_calls": 1.0,
+        "avg_plan_chars": 1477.2,
+        "contradictory_audit_count": 3
+      },
+      "new": {
+        "delivery_rate": 1.0,
+        "hard_constraint_rate": 1.0,
+        "avg_rouge1": 0.013886348701697457,
+        "avg_rougeL": 0.012614672277779663,
+        "avg_bleu": 0.0,
+        "audit_pass_rate": 1.0,
+        "avg_solver_calls": 1.2,
+        "avg_plan_chars": 259.0,
+        "contradictory_audit_count": 0
+      }
+    },
+    {
+      "experiment": "temp_0.2_runs.jsonl",
+      "old": {
+        "delivery_rate": 1.0,
+        "hard_constraint_rate": 0.2,
+        "avg_rouge1": 0.12998327227172365,
+        "avg_rougeL": 0.05320448811285664,
+        "avg_bleu": 0.002815395001972927,
+        "audit_pass_rate": 0.0,
+        "avg_solver_calls": 1.0,
+        "avg_plan_chars": 2875.0,
+        "contradictory_audit_count": 3
+      },
+      "new": {
+        "delivery_rate": 1.0,
+        "hard_constraint_rate": 0.0,
+        "avg_rouge1": 0.10334765992541321,
+        "avg_rougeL": 0.04406642451545387,
+        "avg_bleu": 0.0009353508128626033,
+        "audit_pass_rate": 0.6,
+        "avg_solver_calls": 1.6,
+        "avg_plan_chars": 2043.0,
+        "contradictory_audit_count": 0
+      }
+    },
+    {
+      "experiment": "temp_0.7_runs.jsonl",
+      "old": {
+        "delivery_rate": 1.0,
+        "hard_constraint_rate": 0.0,
+        "avg_rouge1": 0.12058066967539875,
+        "avg_rougeL": 0.049696557711235934,
+        "avg_bleu": 0.0036298556923636495,
+        "audit_pass_rate": 0.2,
+        "avg_solver_calls": 1.0,
+        "avg_plan_chars": 2732.2,
+        "contradictory_audit_count": 3
+      },
+      "new": {
+        "delivery_rate": 1.0,
+        "hard_constraint_rate": 0.0,
+        "avg_rouge1": 0.13049692265574436,
+        "avg_rougeL": 0.05512891132941968,
+        "avg_bleu": 0.006399011095786384,
+        "audit_pass_rate": 1.0,
+        "avg_solver_calls": 1.4,
+        "avg_plan_chars": 2300.8,
+        "contradictory_audit_count": 0
+      }
+    },
+    {
+      "experiment": "top_p_0.8_runs.jsonl",
+      "old": {
+        "delivery_rate": 1.0,
+        "hard_constraint_rate": 0.0,
+        "avg_rouge1": 0.12279971362556119,
+        "avg_rougeL": 0.05198553559406842,
+        "avg_bleu": 0.006929916286911975,
+        "audit_pass_rate": 0.0,
+        "avg_solver_calls": 1.0,
+        "avg_plan_chars": 2450.2,
+        "contradictory_audit_count": 3
+      },
+      "new": {
+        "delivery_rate": 1.0,
+        "hard_constraint_rate": 0.6,
+        "avg_rouge1": 0.0319104978982418,
+        "avg_rougeL": 0.020497497411446127,
+        "avg_bleu": 0.0,
+        "audit_pass_rate": 1.0,
+        "avg_solver_calls": 1.0,
+        "avg_plan_chars": 583.6,
+        "contradictory_audit_count": 0
+      }
+    }
+  ]
+}
